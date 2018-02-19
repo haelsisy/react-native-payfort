@@ -1,0 +1,26 @@
+{
+  "name": "react_native_payfort",
+  "version": "1.0.0",
+  "description": "A react native wrapper for PayFort SDK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zumaawad/react-native-payfort.git"
+  },
+  "keywords": [
+    "reactnative",
+    "payfort",
+    "ecommerce",
+    "online payment",
+    "payment"
+  ],
+  "author": "Hazem El-Sisy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zumaawad/react-native-payfort/issues"
+  },
+  "homepage": "https://github.com/zumaawad/react-native-payfort#readme"
+}
