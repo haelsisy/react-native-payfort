@@ -5,14 +5,21 @@ A react native wrapper for PayFort SDK.
 
 # Install
 
-Download and follow the installation steps in PayFort documentation
- https://docs.payfort.com/docs/mobile-sdk/build/index.html#download
- 
+1.Download and follow the installation steps in PayFort documentation
+
+>  https://docs.payfort.com/docs/mobile-sdk/build/index.html#download
+
+ 2.Run 
+
+> npm install react-native-payfort --save
+> react-native link react-native-payfort
 
 # Usage
 
-    let { Payfort } = require('react-native').NativeModules;
-    ........
+    import { Payfort } from 'react-native-payfort';
+    
+    ..
+    
     let options = {
       access_code: '', // Access Code
       command: 'AUTHORIZATION', //Command (AUTHORIZATION, PURCHASE)
