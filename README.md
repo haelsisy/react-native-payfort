@@ -50,26 +50,26 @@ A react native wrapper for PayFort SDK.
 ### Response
 
     {
-	    amount: "1000",
-		authorization_code: "******",
-		card_number: "400555******0001",
-		command: "AUTHORIZATION",
-		currency: "EGP",
-		customer_email: "email@domain.com",
-		customer_ip: "**.**.**.**",
-		customer_name: "",
-		eci: "ECOMMERCE",
-		expiry_date: "2105",
-		fort_id: "**1904821400021901",
-		language: "en",
-		merchant_reference: "XYZ9239-yu8100",
-		payment_option: "VISA",
-		phone_number: "",
-		response_code: "02000",
-		response_message: "Success",
-		sdk_token: "**8FE89271477477E053321E320AEE28",
-		status: "02",
-		token_name: "**8FE0E32A5D7475E053321E320A1300"
+    amount: "1000",
+    authorization_code: "******",
+    card_number: "400555******0001",
+    command: "AUTHORIZATION",
+    currency: "EGP",
+    customer_email: "email@domain.com",
+    customer_ip: "**.**.**.**",
+    customer_name: "",
+    eci: "ECOMMERCE",
+    expiry_date: "2105",
+    fort_id: "**1904821400021901",
+    language: "en",
+    merchant_reference: "XYZ9239-yu8100",
+    payment_option: "VISA",
+    phone_number: "",
+    response_code: "02000",
+    response_message: "Success",
+    sdk_token: "**8FE89271477477E053321E320AEE28",
+    status: "02",
+    token_name: "**8FE0E32A5D7475E053321E320A1300"
 	}
 
 # Test Card Details
