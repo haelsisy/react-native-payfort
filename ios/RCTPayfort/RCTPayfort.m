@@ -28,6 +28,8 @@ RCT_EXPORT_METHOD(initPayfort:(NSDictionary *)input callback:(RCTResponseSenderB
 
 - (void)initializePayfort:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback
 {
+    NSNumber *isLive = [input objectForKey:@"isLive"];
+    NSLog(@"----isLive : %@", isLive);
     NSString *access_code = [input objectForKey:@"access_code"];
     NSString *merchant_identifier = [input objectForKey:@"merchant_identifier"];
     NSString *language = [input objectForKey:@"language"];
@@ -49,7 +51,7 @@ RCT_EXPORT_METHOD(initPayfort:(NSDictionary *)input callback:(RCTResponseSenderB
     NSError *error;
     NSData *postdata = [NSJSONSerialization dataWithJSONObject:tmp options:0 error:&error];
 
-    NSString *BaseDomain =@"https://sbpaymentservices.payfort.com/FortAPI/paymentApi";
+    NSString *BaseDomain = [isLive  isEqual: @1]? @"https://paymentservices.payfort.com/FortAPI/paymentApi" : @"https://sbpaymentservices.payfort.com/FortAPI/paymentApi";
     NSString *urlString = [NSString stringWithFormat:@"%@",BaseDomain];
     NSString *postLength = [NSString stringWithFormat:@"%ld",[postdata length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -157,7 +159,7 @@ RCT_EXPORT_METHOD(initPayfort:(NSDictionary *)input callback:(RCTResponseSenderB
                                  Success:^(NSDictionary *requestDic, NSDictionary *responeDic) {
                                      NSLog(@"Success");
                                      NSLog(@"responeDic=%@",responeDic);
-                                     callback(@[responeDic, @true]);
+                                     callback(@[@"",responeDic, @true]);
                                  }
                                 Canceled:^(NSDictionary *requestDic, NSDictionary *responeDic) {
                                     NSLog(@"Canceled");

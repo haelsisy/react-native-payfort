@@ -19,6 +19,7 @@ A react native wrapper for PayFort SDK.
     let { Payfort } = require('react-native').NativeModules;
     ........
     let options = {
+      isLive: false, // true for production, false for sandbox
       access_code: '', // Access Code
       command: 'AUTHORIZATION', //Command (AUTHORIZATION, PURCHASE)
       merchant_identifier: '', //The Merchant Identifier
