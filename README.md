@@ -12,7 +12,7 @@ A react native wrapper for PayFort SDK.
  2.Run
 
 > npm install react-native-payfort --save
->  react-native link react-native-payfort
+> react-native link react-native-payfort
 
 # Usage
 
@@ -30,7 +30,7 @@ A react native wrapper for PayFort SDK.
       merchant_extra4: '', //Extra data sent by merchant. Will be received and sent back as received. Will not be displayed in any report
       customer_name: '', //The customer’s name
       customer_email: 'email@domain.com', //The customer’s email (email@domain.com)
-      phone_number: '', //The customer’s phone number.
+      phone_number: '', //The customer’s phone number (00962797219966)
       payment_option:'', //Payment option (MASTERCARD,VISA,AMEX)
       language: 'en', // The checkout page and messages language (en, ar)
       currency: 'EGP', //The currency of the transaction’s amount in ISO code 3 (EGP)
@@ -46,6 +46,31 @@ A react native wrapper for PayFort SDK.
       // Payfort initialized...
       console.log(results)
     });
+
+### Response
+
+    {
+	    amount: "1000",
+		authorization_code: "******",
+		card_number: "400555******0001",
+		command: "AUTHORIZATION",
+		currency: "EGP",
+		customer_email: "email@domain.com",
+		customer_ip: "**.**.**.**",
+		customer_name: "",
+		eci: "ECOMMERCE",
+		expiry_date: "2105",
+		fort_id: "**1904821400021901",
+		language: "en",
+		merchant_reference: "XYZ9239-yu8100",
+		payment_option: "VISA",
+		phone_number: "",
+		response_code: "02000",
+		response_message: "Success",
+		sdk_token: "**8FE89271477477E053321E320AEE28",
+		status: "02",
+		token_name: "**8FE0E32A5D7475E053321E320A1300"
+	}
 
 # Test Card Details
 
