@@ -12,6 +12,7 @@ A react native wrapper for PayFort SDK.
  2.Run
 
 > npm install react-native-payfort --save
+
 > react-native link react-native-payfort
 
 # Usage
