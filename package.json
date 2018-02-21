@@ -1,6 +1,6 @@
 {
   "name": "react-native-payfort",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react native wrapper for PayFort SDK.",
   "main": "index.js",
   "scripts": {

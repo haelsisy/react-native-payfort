@@ -29,7 +29,6 @@ RCT_EXPORT_METHOD(initPayfort:(NSDictionary *)input callback:(RCTResponseSenderB
 - (void)initializePayfort:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback
 {
     NSNumber *isLive = [input objectForKey:@"isLive"];
-    NSLog(@"----isLive : %@", isLive);
     NSString *access_code = [input objectForKey:@"access_code"];
     NSString *merchant_identifier = [input objectForKey:@"merchant_identifier"];
     NSString *language = [input objectForKey:@"language"];
